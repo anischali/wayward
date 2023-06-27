@@ -1,5 +1,5 @@
 bin_PROGRAMS = wayward wayward-terminal
-lib_LTLIBRARIES = libshell_helper.la
+lib_LTLIBRARIES = shell_helper.la
 
 
 EXTRA_CCFLAGS=-std=c11 -pthread \
@@ -85,13 +85,13 @@ wayward_terminal_SOURCES = \
 
 
 
-libshell_helper_la_CFLAGS = $(CFLAGS) $(EXTRA_CCFLAGS) $(libdrm_CFLAGS) -fPIC
+shell_helper_la_CFLAGS = $(CFLAGS) $(EXTRA_CCFLAGS) $(libdrm_CFLAGS) -fPIC
 
-libshell_helper_la_LDFLAGS = $(LDFLAGS) -shared -fPIC -module -avoid-version -export-dynamic 
+shell_helper_la_LDFLAGS = $(LDFLAGS) -shared -fPIC -module -avoid-version -export-dynamic 
 
-libshell_helper_la_LIBADD = $(LIBLTDL) $(EXTRA_LIBS)
+shell_helper_la_LIBADD = $(LIBLTDL) $(EXTRA_LIBS)
 
-libshell_helper_la_SOURCES = \
+shell_helper_la_SOURCES = \
     gen-protocol/weston-desktop-shell-code.c \
     gen-protocol/shell-helper-protocol.c \
     $(SHELL_HELPER_SRC)

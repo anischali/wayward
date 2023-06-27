@@ -54,7 +54,6 @@ AS_CASE([$exec_prefix:$prefix],
 [NONE:NONE | NONE:/usr | /usr:*],
   [AC_MSG_NOTICE([Default --exec-prefix detected.])
    AS_CASE([$bindir],  ['${exec_prefix}/bin'],  [bindir=/bin;   AC_MSG_NOTICE([  --bindir defaults to /bin])  ])
-   AS_CASE([$sbindir], ['${exec_prefix}/sbin'], [sbindir=/sbin; AC_MSG_NOTICE([  --sbindir defaults to /sbin])])
    AS_CASE([$libdir],  ['${exec_prefix}/lib'],  [libdir=/lib;   AC_MSG_NOTICE([  --libdir defaults to /lib])  ])
   ]
 )
