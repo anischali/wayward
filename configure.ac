@@ -8,11 +8,15 @@ AC_LANG(C)
 AC_PROG_CC
 
 AC_HEADER_STDC
+AC_ENABLE_SHARED
+AC_DISABLE_STATIC
+AC_PROG_LIBTOOL(libtool)
 
 PKG_CHECK_MODULES([cairo], [cairo])
 AC_CHECK_DECLS([cairo_create], [], [], [#include <cairo/cairo.h>])
 
 PKG_CHECK_MODULES([glib], [glib-2.0])
+
 
 
 PKG_CHECK_MODULES([libweston], [libweston-9])
