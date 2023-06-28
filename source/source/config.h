@@ -30,7 +30,7 @@
 
 #define LIBEXECDIR "/usr/lib"
 
-#define LIBWESTON_MODULEDIR "/usr/lib/libweston-9"
+#define LIBWESTON_MODULEDIR "/usr/lib/libweston-10"
 
 #define MAJOR_IN_SYSMACROS 1
 
@@ -40,13 +40,13 @@
 
 #define PACKAGE_BUGREPORT ""
 
-#define PACKAGE_STRING "weston 9.0.0"
+#define PACKAGE_STRING "weston 10.0.0"
 
 #define PACKAGE_URL ""
 
-#define PACKAGE_VERSION "9.0.0"
+#define PACKAGE_VERSION "10.0.0"
 
-#define VERSION "9.0.0"
+#define VERSION "10.0.0"
 
 #define WESTON_NATIVE_BACKEND "drm-backend.so"
 

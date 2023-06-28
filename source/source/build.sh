@@ -11,7 +11,7 @@ cd `dirname $0`
 
 
 GTK_CFLAGS="-std=c11 -pthread \
--I/usr/include/libweston-9/ \
+-I/usr/include/libweston-10/ \
 -I. \
 -I.. \
 -I../shared/ \

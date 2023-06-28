@@ -19,8 +19,8 @@ PKG_CHECK_MODULES([glib], [glib-2.0])
 
 
 
-PKG_CHECK_MODULES([libweston], [libweston-9])
-PKG_CHECK_MODULES([libweston_desktop], [libweston-desktop-9])
+PKG_CHECK_MODULES([libweston], [libweston-10])
+PKG_CHECK_MODULES([libweston_desktop], [libweston-desktop-10])
 
 
 PKG_CHECK_MODULES([pixman], [pixman-1])
